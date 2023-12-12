@@ -1,0 +1,14 @@
+/*! CSS PROPERTIES */
+
+:root {
+    --: ;
+
+   }
+
+/*! GENERAL RULES */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
