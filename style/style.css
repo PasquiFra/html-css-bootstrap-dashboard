@@ -36,6 +36,17 @@ a {
     text-decoration: none;
 }
 
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
 /*! UTILS */
 
 .txt-white {
@@ -48,7 +59,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
  
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 0;
 }
 .flex-between {
@@ -57,7 +68,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 0;
 }
 
@@ -123,13 +134,49 @@ nav {
     margin: 8px 0;
 }
 
+/* MAIN-CONTENT */
+
 .wrapper {
     flex-basis: 100%;
     height: calc(100vh - var(--header-height));
     overflow: auto;
 }
 
+/* Header */
+
 .header-main {
-    height: 300px;
     background-color: var(--bg-header-main);
+    height: 300px;
+}
+
+.header-main .col {
+    padding: 15px;
+}
+
+.add-new-user {
+    display: flex;
+    align-items: center;
+}
+
+.add-new-user button {
+    color: #ffffff;
+    border: 1px solid white;
+    margin: 0 15px;
+}
+
+.blaze-plan {
+    margin-top: 17px;
+}
+
+.boolean .badge {
+    background-color: #00000040;
+    font-size: 1rem;
+    font-weight: 600;
+
+    height: 25px;
+    padding: 5px 10px;
+}
+
+.count {
+    font-size: 2rem;
 }
