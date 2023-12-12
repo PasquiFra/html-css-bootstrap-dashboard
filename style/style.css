@@ -26,7 +26,15 @@ img {
     display: inline-block;
 }
 
+ul, li {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
 
+a {
+    text-decoration: none;
+}
 
 /*! UTILS */
 
@@ -39,7 +47,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
+ 
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -57,6 +65,11 @@ img {
 
 .fa-bell {
     color: var(--bg-bell);
+}
+
+.navigation i {
+    color: white;
+    font-size: 1.2rem;
 }
 
 /*! SECTIONS */
@@ -106,8 +119,9 @@ nav {
     background-size: 800px;
 }
 
-
-
+.navigation li {
+    margin: 8px 0;
+}
 
 .wrapper {
     flex-basis: 100%;
