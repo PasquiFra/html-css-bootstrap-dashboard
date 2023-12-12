@@ -1,8 +1,15 @@
 /*! CSS PROPERTIES */
 
 :root {
-    --: ;
+    --bg-white: #ffffff ;
+    --txt-white: #ffffff ;
+    --bg-navbar: #12283e;
+    --bg-header-main: #1b72e8;
+    --bg-bell:#ff8f00;
+    --bg-lgray:#e5e5e5;
 
+    --header-height: 80px;
+    --navbar-width: 80px;
    }
 
 /*! GENERAL RULES */
@@ -11,4 +18,104 @@
     padding: 0;
     margin: 0;
     font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+
+
+/*! UTILS */
+
+.txt-white {
+    color: #ffffff;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+/*! Font Awesome  */
+
+.fa-bell {
+    color: var(--bg-bell);
+}
+
+/*! SECTIONS */
+
+/*! --- HEADER ---*/
+
+header {
+    height: var(--header-height);
+    background-color: var(--bg-white);
+}
+
+/* --- Logo --- */
+.logo-header {
+    width: 60px;
+    height: 60px;
+}
+.logo-header img{
+    width: 60px;
+    height: 60px;
+}
+
+/* --- Search-bar --- */
+
+.input-group *{
+    background-color: var(--bg-lgray);  
+}
+
+#search-addon1:hover,
+#search-addon1:active {
+    background-color: var(--bg-lgray);
+}
+
+.form-control::placeholder {
+    color: #6d6a6ad2;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/*! --- MAIN ---*/
+
+/* Navbar */
+nav {
+    width: var(--navbar-width);
+    height: calc(100vh - var(--header-height));
+    background-color: var(--bg-navbar);
+    background-image: url(../img/sidebar-bg.png);
+    background-size: 800px;
+}
+
+
+
+
+.wrapper {
+    flex-basis: 100%;
+    height: calc(100vh - var(--header-height));
+    overflow: auto;
+}
+
+.header-main {
+    height: 300px;
+    background-color: var(--bg-header-main);
 }
