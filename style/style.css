@@ -236,6 +236,14 @@ nav {
 
 /* ? --- Offcanvas ---*/
 
+.header-main .offcanvas {
+    width: 100vw;
+}
+
+.offcanvas-body .form-check {
+    padding-left: 35px;
+    margin-top: 10px;
+}
 
 
 /* SECTION-MAIN */
