@@ -24,7 +24,7 @@
 @media screen and (min-width:768px) {
     
     .header-main {
-        min-height: 125px;
+        min-height: 150px;
     }
 
     .header-main h4 {
@@ -47,6 +47,7 @@
 
     .start-date {
         display: table-cell;
+        width: 15%;
     }
 }
 
@@ -58,5 +59,21 @@
 
     .navigation li {
         text-align: start;
+    }
+
+    .nome {
+        width: 20%;
+    }
+
+    .logo-header {
+        flex-basis: 150px;
+    }
+
+    .input-group {
+        flex-basis: 70%;
+    }
+
+    .header-right {
+        flex-basis: 150px;
     }
 }
