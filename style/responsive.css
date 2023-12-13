@@ -1,0 +1,62 @@
+/*! CSS PROPERTIES */
+
+:root {
+    --bg-white: #ffffff ;
+    --txt-white: #ffffff ;
+    --bg-navbar: #12283e;
+    --bg-header-main: #1b72e8;
+    --bg-bell:#ff8f00;
+    --bg-lgray:#e5e5e5;
+
+    --header-height: 80px;
+    --navbar-width: 80px;
+
+    --bs-card-border-color: var(--bs-border-color-translucent);
+}
+
+@media screen and (min-width:576px) {
+    
+    .roi {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    .header-main {
+        min-height: 125px;
+    }
+
+    .header-main h4 {
+        font-size: 1rem;
+    }
+
+    .header-main .badge {
+        font-size: 0.8rem;
+    }
+
+    .boolean .badge {
+        padding: 4px 8px;
+        height: 25px;
+    }
+
+    .header-main h1,
+    .count {
+        font-size: 1.7rem;
+    }
+
+    .start-date {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    nav {
+        width: 175px; 
+    }
+
+    .navigation li {
+        text-align: start;
+    }
+}

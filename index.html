@@ -43,7 +43,7 @@
             <a class="h-100" href="#"><img src="./img/mobile-logo.png" alt="logo-small"></a>
             <a class="d-none" href="#"><img src="./img/logo.svg" alt="logo-desktop"></a>
         </picture>
-        <div class="input-group w-75 justify-content-start">
+        <div class="input-group justify-content-start">
             <button class="btn input-group-search p-2" id="search-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class="form-control p-1" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon1">
         </div>
@@ -60,15 +60,35 @@
         <nav class="navigation flex-between flex-column flex-grow-0">
 
             <div>
-                <ul class="flex-center py-4">
-                    <li class="w-100"><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                    <li class="w-100"><a href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
-                    <li class="w-100"><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                <ul class="row row-cols-1 p-4">
+                    <li class="col">
+                        <a class="d-flex" href="#">
+                            <div class="nav-icon"><i class="fa-solid fa-house"></i></div>
+                            <span class="d-none d-lg-inline-block px-3 text-white">Home</span>
+                        </a>
+                    </li>
+                    <li class="col d-flex">
+                        <a class="d-flex" href="#">
+                            <div class="nav-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <span class="d-none d-lg-inline-block px-3 text-white">Stats</span>
+                        </a>
+                    </li>
+                    <li class="col d-flex">
+                        <a class="d-flex" href="#">
+                            <div class="nav-icon"><i class="fa-solid fa-signal"></i></div>
+                            <span class="d-none d-lg-inline-block px-3 text-white">Signals</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
                 <ul class="flex-center">
-                    <li class="w-100"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+                    <li class="w-100">
+                        <a class="d-flex" href="#">
+                            <div class="nav-icon"><i class="fa-solid fa-gear"></i></div>
+                            <span class="d-none d-lg-inline-block px-3 text-white">Admin</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -78,16 +98,15 @@
         <div class="wrapper">
 
             <!-- Header del main -->
-            <header class="header-main container-fluid">
+            <header class="header-main container-fluid py-2">
 
-                <div class="row row-cols-1 h-100">
-                    <div class="col add-new-user text-white">
+                <div class="row row-cols-1 row-cols-md-3 h-100 align-items-md-top">
+                    <div class="col add-new-user text-white order-md-1">
                         <h4>Nuovo Studente</h4>
                         <button class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
                     </div>
                     <div class="col boolean d-flex flex-wrap">
-                        <div class="d-flex w-100"><h1>Boolean</h1> 
-                            <span class="badge rounded-pill blaze-plan">Piano blaze</span>
+                        <div class="d-flex w-100"><h1>Boolean<span class="badge rounded-pill blaze-plan">Piano blaze</span></h1> 
                         </div>
                         <div class="flex-center">
                             <span class="badge rounded-pill">3 app</span>
@@ -97,7 +116,7 @@
                     </div>
                     <div class="col text-white">
                         <h4>Studenti online negli ultimi 30 minuti</h4>
-                        <div class="count">125</div>
+                        <span class="count">125<span>
                     </div>
                 </div>
 
