@@ -44,14 +44,21 @@
             <a class="d-none d-lg-inline-block" href="#"><img src="./img/logo.svg" alt="logo-desktop"></a>
         </div>
         <div class="input-group ricerca justify-content-start">
-            <button class="btn input-group-search p-2" id="search-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <span class="input-group-search rounded-start p-2"><i class="fa-solid fa-magnifying-glass"></i></span>
             <input class="form-control p-1" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon1">
         </div>
-        <div class="header-right">
+        <div class="header-right text-end">
             <a class="d-none d-lg-inline-block" href="#"><i class="fa-solid fa-list-ul"></i></a>
             <a class="d-none d-lg-inline-block" href="#"><i class="fa-solid fa-circle-question"></i></a>
             <a class="d-none d-lg-inline-block" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <span class="dropdown">
+                <a data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fa-solid fa-bell"></i></a>
+                <ul class="dropdown-menu me-5">
+                    <li><a class="dropdown-item text-start" href="#">Menu dropdown 1</a></li>
+                    <li><a class="dropdown-item text-start" href="#">Menu dropdown 2</a></li>
+                    <li><a class="dropdown-item text-start" href="#">Menu dropdown 3</a></li>
+                </ul>
+            </span>
         </div>
 
     </header>
@@ -106,11 +113,11 @@
                 <div class="row h-100 align-items-md-top">
                     <div class="col-12 col-md-3 add-new-user text-white order-md-1">
                         <h4>Nuovo Studente</h4>
-                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="offcanvas" aria-controls="offcanvas"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-form" aria-controls="offcanvas-form"><i class="fa-solid fa-plus"></i></button>
                     </div>
 
                     <!--! OFFCANVAS -->
-                    <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvasLabel">
                         <div class="offcanvas-header">
                           <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
