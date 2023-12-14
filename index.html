@@ -39,10 +39,10 @@
     <!--! HEADER -->
     <header class="container-fluid flex-between flex-nowrap">
         
-        <picture class="logo-header">
+        <div class="logo-header">
             <a class="h-100 d-lg-none" href="#"><img src="./img/mobile-logo.png" alt="logo-small"></a>
             <a class="d-none d-lg-inline-block" href="#"><img src="./img/logo.svg" alt="logo-desktop"></a>
-        </picture>
+        </div>
         <div class="input-group ricerca justify-content-start">
             <button class="btn input-group-search p-2" id="search-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class="form-control p-1" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-addon1">
@@ -106,7 +106,7 @@
                 <div class="row h-100 align-items-md-top">
                     <div class="col-12 col-md-3 add-new-user text-white order-md-1">
                         <h4>Nuovo Studente</h4>
-                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="offcanvas" aria-controls="offcanvas"><i class="fa-solid fa-plus"></i></button>
                     </div>
 
                     <!--! OFFCANVAS -->
@@ -132,8 +132,8 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="form-email" class="form-label w-100">Email</label>
                                     <div class="input-group">
-                                        <span class="input-group-text" id="form-email">@</span>
-                                        <input type="email" class="form-control" aria-label="Username" aria-describedby="form-email">
+                                        <span class="input-group-text">@</span>
+                                        <input type="email" class="form-control" aria-label="Username" aria-describedby="form-email" id="form-email">
                                     </div>
                                 </div>
                                 
@@ -170,7 +170,7 @@
 
                                 <div class="col-12 mb-3">
                                     <label for="form-foto" class="form-label">Foto</label>
-                                    <input type="file" class="form-control" aria-label="Upload">
+                                    <input type="file" class="form-control" aria-label="Upload" id="form-foto">
                                 </div>
 
                                 <div class="col-12 mb-3 form-check">
@@ -199,7 +199,7 @@
                     </div>
                     <div class="col-12 col-md-4 text-white">
                         <h4>Studenti online negli ultimi 30 minuti</h4>
-                        <span class="count">125<span>
+                        <span class="count">125</span>
                     </div>
                 </div>
 
@@ -228,7 +228,7 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 75</span>
                                         </td>
@@ -243,7 +243,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 76</span>
                                         </td>
@@ -258,7 +258,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 77</span>
                                         </td>
@@ -273,7 +273,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 78</span>
                                         </td>
@@ -288,7 +288,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 79</span>
                                         </td>
@@ -303,7 +303,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 80</span>
                                         </td>
@@ -318,7 +318,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 81</span>
                                         </td>
@@ -333,7 +333,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="nome" scope="row">
+                                        <td class="nome">
                                             <img class="class-avatar" src="./img/class-avatar.jpg" alt="class-avatar">
                                             <span>Classe 82</span>
                                         </td>
